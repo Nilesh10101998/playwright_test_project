@@ -17,6 +17,6 @@ test("Login Test", async ({ page }) => {
         credentials.validCredentials.password
     );
 
-    await page.waitForTimeout(4000);
+    await page.waitForTimeout(3000);
 
 })
