@@ -5,6 +5,13 @@ import { defineConfig, devices } from '@playwright/test';
  * Read environment variables from file.
  * https://github.com/motdotla/dotenv
  */
+
+export const env_urls = {
+  qaUrl: "https://demoblaze.com/index.html",
+  devUrl: "https://gemini.google.com/app",
+  prodUrl: "https://www.google.com/"
+}
+
 import dotenv from 'dotenv';
 
 dotenv.config({ path: path.resolve('.env') });
@@ -31,6 +38,8 @@ export default defineConfig({
 
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
     trace: 'on-first-retry',
+    screenshot: "off",
+    video: "off"
   },
 
   /* Configure projects for major browsers */
