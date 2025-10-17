@@ -9,7 +9,8 @@ import { defineConfig, devices } from '@playwright/test';
 export const env_urls = {
   qaUrl: "https://demoblaze.com/index.html",
   devUrl: "https://gemini.google.com/app",
-  prodUrl: "https://www.google.com/"
+  prodUrl: "https://www.google.com/",
+  aiUrl: "https://www.wadhwaniai.org/"
 }
 
 import dotenv from 'dotenv';
